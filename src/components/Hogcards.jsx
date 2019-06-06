@@ -4,7 +4,7 @@ import HogCard from './HogCard'
 
 export default class Hogcards extends Component {
   render() {
-    const hogcards = this.props.hogs.map((hog, idx) => <HogCard key={idx} hog={hog} /> )
+    const hogcards = this.props.hogs.map(hog => <HogCard key={hog.name} hog={hog} /> )
     return (
       <div className="ui cards">
         {hogcards}

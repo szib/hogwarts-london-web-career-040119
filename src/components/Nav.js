@@ -1,7 +1,7 @@
 import piggy from '../porco.png'
 import React from 'react'
 
-const Nav = () => {
+const Nav = (props) => {
 	return (
 		<div className="navWrapper">
 			<span className="headerText">Hogwarts</span>
@@ -11,6 +11,12 @@ const Nav = () => {
 				</a>
 			</div>
 			<span className="normalText">A React App for County Fair Hog Fans</span>
+			<label htmlFor="greasedFilter">Show only greased</label>
+			<input type="checkbox" 
+				value={props.onlyGreased} 
+				onChange={props.greasedFilterChangeHandler} 
+				name="greasedFilter"
+				/>
 		</div>
 	)
 }
