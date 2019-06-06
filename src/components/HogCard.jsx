@@ -12,7 +12,7 @@ export default class HogCard extends Component {
   }
 
   render() {
-    const picUrl = '/hog-imgs/' + this.props.hog.name.toLowerCase().replace(/ /gi, '_') + '.jpg'
+    const picUrl = require('../hog-imgs/' + this.props.hog.name.toLowerCase().replace(/ /gi, '_') + '.jpg')
     return (
       <div className="ui raised card" onClick={this.toggle}>
         <div className="image">
