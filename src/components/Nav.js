@@ -11,12 +11,6 @@ const Nav = (props) => {
 				</a>
 			</div>
 			<span className="normalText">A React App for County Fair Hog Fans</span>
-			<label htmlFor="greasedFilter">Show only greased</label>
-			<input type="checkbox" 
-				value={props.onlyGreased} 
-				onChange={props.greasedFilterChangeHandler} 
-				name="greasedFilter"
-				/>
 		</div>
 	)
 }
